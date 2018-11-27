@@ -3,7 +3,7 @@ import java.awt.EventQueue;
 import javax.swing.JFrame;
 
 public class PirexGUI {
-
+//Shane Harris Test
 	private JFrame frame;
 
 	/**
