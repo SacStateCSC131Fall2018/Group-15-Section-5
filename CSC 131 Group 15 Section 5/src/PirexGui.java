@@ -2,7 +2,7 @@ import java.awt.EventQueue;
 
 import javax.swing.JFrame;
 
-public class PirexGUI {
+public class PirexGui {
 //Shane Harris Test
 	private JFrame frame;
 
@@ -13,7 +13,7 @@ public class PirexGUI {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					PirexGUI window = new PirexGUI();
+					PirexGui window = new PirexGui();
 					window.frame.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -25,7 +25,7 @@ public class PirexGUI {
 	/**
 	 * Create the application.
 	 */
-	public PirexGUI() {
+	public PirexGui() {
 		initialize();
 	}
 
@@ -34,7 +34,7 @@ public class PirexGUI {
 	 */
 	private void initialize() {
 		frame = new JFrame();
-		frame.setBounds(100, 100, 450, 300);
+		frame.setBounds(100, 100, 999, 598);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 	}
 
