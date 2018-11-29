@@ -13,7 +13,7 @@ import javax.swing.JScrollBar;
 import javax.swing.JSeparator;
 
 public class PirexGui {
-//Shane Harris Test
+//Saving first gui for refference
 	private JFrame frame;
 	private JTextField textField;
 	private JTextField textField_1;
