@@ -11,6 +11,7 @@ import javax.swing.JButton;
 import javax.swing.JTextArea;
 import javax.swing.JScrollBar;
 import javax.swing.JSeparator;
+import java.awt.BorderLayout;
 
 public class PirexGui {
 //Shane Harris Test
@@ -51,14 +52,16 @@ public class PirexGui {
 		frame = new JFrame();
 		frame.setBounds(100, 100, 1000, 600);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		frame.getContentPane().setLayout(null);
+		frame.getContentPane().setLayout(new BorderLayout(0, 0));
+		
+		JToolBar toolBar = new JToolBar();
+		frame.getContentPane().add(toolBar, BorderLayout.NORTH);
 		
 		JLayeredPane layeredPane = new JLayeredPane();
-		layeredPane.setBounds(12, 37, 958, 489);
 		frame.getContentPane().add(layeredPane);
 		
 		JTabbedPane tabbedPane = new JTabbedPane(JTabbedPane.TOP);
-		tabbedPane.setBounds(12, 13, 934, 463);
+		tabbedPane.setBounds(12, 13, 958, 509);
 		layeredPane.add(tabbedPane);
 		
 		JPanel panel = new JPanel();
@@ -157,9 +160,5 @@ public class PirexGui {
 		JScrollBar scrollBar_1 = new JScrollBar();
 		scrollBar_1.setBounds(908, 13, 21, 420);
 		panel_2.add(scrollBar_1);
-		
-		JToolBar toolBar = new JToolBar();
-		toolBar.setBounds(12, 6, 958, 18);
-		frame.getContentPane().add(toolBar);
 	}
 }
