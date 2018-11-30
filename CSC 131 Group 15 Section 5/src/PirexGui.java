@@ -19,7 +19,7 @@ import java.awt.Point;
 import java.awt.Insets;
 
 public class PirexGui {
-//Shane Harris Test
+//Backup Master
 	private JFrame frame;
 	private JTextField textField;
 	private JTextField textField_1;
