@@ -4,6 +4,7 @@ import javax.swing.JFrame;
 import javax.swing.JLayeredPane;
 import javax.swing.JMenuBar;
 import javax.swing.JMenu;
+import javax.swing.JMenuItem;
 import javax.swing.JTabbedPane;
 import javax.swing.JPanel;
 import javax.swing.JLabel;
@@ -63,17 +64,31 @@ public class PirexGui {
 		JMenuBar menuBar = new JMenuBar();
 		frame.getContentPane().add(menuBar, BorderLayout.NORTH);
 		
-		JMenu fileMenu = new JMenu("File");
-		fileMenu.setLayout(new BorderLayout(1, 1));
-		menuBar.add(fileMenu);
+		JMenu menu = new JMenu("File");
 		
-		JMenu optionMenu = new JMenu("Options");
-		optionMenu.setLayout(new BorderLayout(1, 1));
-		menuBar.add(optionMenu);
+		JMenuItem item = new JMenuItem("Save Query");
+		menu.add(item);
+		item = new JMenuItem("Load Query");
+		menu.add(item);
+		item = new JMenuItem("Export");
+		menu.add(item);
+		item = new JMenuItem("Exit");	
+		menu.add(item);
+		menuBar.add(menu);
 		
-		JMenu helpMenu = new JMenu("Help");
-		helpMenu.setLayout(new BorderLayout(1, 1));
-		menuBar.add(helpMenu);
+		menu = new JMenu("Options");
+		item = new JMenuItem("Documents");
+		menu.add(item);
+		item = new JMenuItem("Sources");
+		menu.add(item);
+		menuBar.add(menu);
+		
+		menu = new JMenu("Help");
+		item = new JMenuItem("About");
+		menu.add(item);
+		item = new JMenuItem("Index");
+		menu.add(item);
+		menuBar.add(menu);
 		
 		JPanel left = new JPanel();
 		frame.getContentPane().add(left, BorderLayout.WEST);
