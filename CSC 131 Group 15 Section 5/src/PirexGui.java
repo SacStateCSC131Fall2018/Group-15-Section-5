@@ -2,7 +2,9 @@ import java.awt.EventQueue;
 
 import javax.swing.JFrame;
 import javax.swing.JLayeredPane;
-import javax.swing.JToolBar;
+import javax.swing.JMenuBar;
+import javax.swing.JMenu;
+import javax.swing.JMenuItem;
 import javax.swing.JTabbedPane;
 import javax.swing.JPanel;
 import javax.swing.JLabel;
@@ -59,42 +61,34 @@ public class PirexGui {
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.getContentPane().setLayout(new BorderLayout(5, 5));
 		
-		JToolBar toolBar = new JToolBar();
-		frame.getContentPane().add(toolBar, BorderLayout.NORTH);
-		toolBar.setFloatable(false);
+		JMenuBar menuBar = new JMenuBar();
+		frame.getContentPane().add(menuBar, BorderLayout.NORTH);
 		
-		JButton filebtn = new JButton("File");
-		filebtn.setLayout(new BorderLayout(0, 0));
-		GridBagConstraints gbc_filebtn = new GridBagConstraints();
-		gbc_filebtn.anchor = GridBagConstraints.NORTH;
-		gbc_filebtn.fill = GridBagConstraints.HORIZONTAL;
-		gbc_filebtn.insets = new Insets(0, 0, 5, 5);
-		gbc_filebtn.gridwidth = 2;
-		gbc_filebtn.gridx = 1;
-		gbc_filebtn.gridy = 0;
-		toolBar.add(filebtn, gbc_filebtn);
+		JMenu menu = new JMenu("File");
 		
-		JButton optionsbtn = new JButton("Options");
-		optionsbtn.setLayout(new BorderLayout(0, 0));
-		GridBagConstraints gbc_optionsbtn = new GridBagConstraints();
-		gbc_optionsbtn.anchor = GridBagConstraints.NORTH;
-		gbc_optionsbtn.fill = GridBagConstraints.HORIZONTAL;
-		gbc_optionsbtn.insets = new Insets(0, 0, 5, 5);
-		gbc_optionsbtn.gridwidth = 2;
-		gbc_optionsbtn.gridx = 2;
-		gbc_optionsbtn.gridy = 0;
-		toolBar.add(optionsbtn, gbc_optionsbtn);
+		JMenuItem item = new JMenuItem("Save Query");
+		menu.add(item);
+		item = new JMenuItem("Load Query");
+		menu.add(item);
+		item = new JMenuItem("Export");
+		menu.add(item);
+		item = new JMenuItem("Exit");	
+		menu.add(item);
+		menuBar.add(menu);
 		
-		JButton helpbtn = new JButton("Help");
-		helpbtn.setLayout(new BorderLayout(0, 0));
-		GridBagConstraints gbc_helpbtn = new GridBagConstraints();
-		gbc_helpbtn.anchor = GridBagConstraints.NORTH;
-		gbc_helpbtn.fill = GridBagConstraints.HORIZONTAL;
-		gbc_helpbtn.insets = new Insets(0, 0, 5, 5);
-		gbc_helpbtn.gridwidth = 2;
-		gbc_helpbtn.gridx = 3;
-		gbc_helpbtn.gridy = 0;
-		toolBar.add(helpbtn, gbc_helpbtn);
+		menu = new JMenu("Options");
+		item = new JMenuItem("Documents");
+		menu.add(item);
+		item = new JMenuItem("Sources");
+		menu.add(item);
+		menuBar.add(menu);
+		
+		menu = new JMenu("Help");
+		item = new JMenuItem("About");
+		menu.add(item);
+		item = new JMenuItem("Index");
+		menu.add(item);
+		menuBar.add(menu);
 		
 		JPanel left = new JPanel();
 		frame.getContentPane().add(left, BorderLayout.WEST);
