@@ -61,10 +61,11 @@ public class PirexGui {
 		
 		JToolBar toolBar = new JToolBar();
 		frame.getContentPane().add(toolBar, BorderLayout.NORTH);
+		toolBar.setFloatable(false);
 		
 		JButton filebtn = new JButton("File");
 		filebtn.setLayout(new BorderLayout(0, 0));
-		filebtn.setLocation(new Point(1, 1));
+		filebtn.setLocation(new Point(1, 0));
 		GridBagConstraints gbc_filebtn = new GridBagConstraints();
 		gbc_filebtn.anchor = GridBagConstraints.NORTH;
 		gbc_filebtn.fill = GridBagConstraints.HORIZONTAL;
@@ -76,8 +77,7 @@ public class PirexGui {
 		
 		JButton optionsbtn = new JButton("Options");
 		optionsbtn.setLayout(new BorderLayout(0, 0));
-		optionsbtn.setLayout(new BorderLayout(0, 0));
-		filebtn.setLocation(new Point(1, 1));
+		optionsbtn.setLocation(new Point(1, 1));
 		GridBagConstraints gbc_optionsbtn = new GridBagConstraints();
 		gbc_optionsbtn.anchor = GridBagConstraints.NORTH;
 		gbc_optionsbtn.fill = GridBagConstraints.HORIZONTAL;
