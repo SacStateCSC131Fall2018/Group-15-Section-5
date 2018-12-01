@@ -65,7 +65,6 @@ public class PirexGui {
 		
 		JButton filebtn = new JButton("File");
 		filebtn.setLayout(new BorderLayout(0, 0));
-		filebtn.setLocation(new Point(1, 0));
 		GridBagConstraints gbc_filebtn = new GridBagConstraints();
 		gbc_filebtn.anchor = GridBagConstraints.NORTH;
 		gbc_filebtn.fill = GridBagConstraints.HORIZONTAL;
@@ -77,7 +76,6 @@ public class PirexGui {
 		
 		JButton optionsbtn = new JButton("Options");
 		optionsbtn.setLayout(new BorderLayout(0, 0));
-		optionsbtn.setLocation(new Point(1, 1));
 		GridBagConstraints gbc_optionsbtn = new GridBagConstraints();
 		gbc_optionsbtn.anchor = GridBagConstraints.NORTH;
 		gbc_optionsbtn.fill = GridBagConstraints.HORIZONTAL;
@@ -89,7 +87,6 @@ public class PirexGui {
 		
 		JButton helpbtn = new JButton("Help");
 		helpbtn.setLayout(new BorderLayout(0, 0));
-		helpbtn.setLocation(new Point(1, 1));
 		GridBagConstraints gbc_helpbtn = new GridBagConstraints();
 		gbc_helpbtn.anchor = GridBagConstraints.NORTH;
 		gbc_helpbtn.fill = GridBagConstraints.HORIZONTAL;
