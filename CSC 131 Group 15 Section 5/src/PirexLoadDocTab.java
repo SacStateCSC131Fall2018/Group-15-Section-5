@@ -51,7 +51,6 @@ public class PirexLoadDocTab extends JPanel{
 		
 		JButton btnBrowse = new JButton("Browse");
 		GridBagConstraints gbc_btnBrowse = new GridBagConstraints();
-		gbc_btnBrowse.fill = GridBagConstraints.HORIZONTAL;
 		gbc_btnBrowse.anchor = GridBagConstraints.EAST;
 		gbc_btnBrowse.insets = new Insets(0, 0, 5, 5);
 		gbc_btnBrowse.gridx = 7;
