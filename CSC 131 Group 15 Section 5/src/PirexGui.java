@@ -57,6 +57,13 @@ public class PirexGui {
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.getContentPane().setLayout(new BorderLayout(5, 5));
 		
+		PirexMenuBar menuBar = new PirexMenuBar();
+		//menuBar.initialize();
+		frame.getContentPane().add(menuBar, BorderLayout.NORTH);
+		
+		
+		// Old code for menu bar.
+		/*
 		JMenuBar menuBar = new JMenuBar();
 		frame.getContentPane().add(menuBar, BorderLayout.NORTH);
 		
@@ -85,6 +92,7 @@ public class PirexGui {
 		item = new JMenuItem("Index");
 		menu.add(item);
 		menuBar.add(menu);
+		*/
 		
 		JPanel left = new JPanel();
 		frame.getContentPane().add(left, BorderLayout.WEST);
