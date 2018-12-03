@@ -11,7 +11,7 @@ import javax.swing.JTextField;
 import javax.swing.border.LineBorder;
 import java.awt.Color;
 
-public class LoadDocTab extends JPanel{
+public class PirexLoadDocTab extends JPanel{
 	
 	/**
 	 * 
@@ -22,7 +22,7 @@ public class LoadDocTab extends JPanel{
 	
 	private String name = "Load Documents";	
 	
-	public LoadDocTab() {
+	public PirexLoadDocTab() {
 		GridBagLayout gbl_panel_1 = new GridBagLayout();
 		gbl_panel_1.columnWidths = new int[] {20, 19, 355, 41, 56, 173, 23, 56, 0};
 		gbl_panel_1.rowHeights = new int[] {0, 30, 30, 32, 30, 30, 40, 40, 40, 120, 50};

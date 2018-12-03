@@ -178,7 +178,7 @@ public class PirexGui {
 		gbc_scrollBar.gridy = 5;
 		panel.add(scrollBar, gbc_scrollBar);
 		
-		JPanel panel_1 = new LoadDocTab();
+		JPanel panel_1 = new PirexLoadDocTab();
 		tabbedPane.add(panel_1);		
 		
 		JPanel panel_2 = new JPanel();
