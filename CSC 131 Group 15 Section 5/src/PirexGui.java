@@ -71,17 +71,12 @@ public class PirexGui {
 		header.add(menuBar, BorderLayout.NORTH);
 		
 		try { 
-			//Image pxIcon = ImageIO.read(getClass().getResourceAsStream("res/PX.png"));
-			 Image pxIcon = ImageIO.read(getClass().getResource("/res/PX.png")); 
+			 Image image = ImageIO.read(PirexGui.class.getResourceAsStream("/res/PX.png")); 
 			 //image = image.getScaledInstance(200, 200, java.awt.Image.SCALE_DEFAULT);
-			 frame.setIconImage(pxIcon); 
+			 frame.setIconImage(new ImageIcon(image).getImage()); 
 		 } catch (IOException e) {
 			 e.printStackTrace(); 
-		 }
-		 catch (NullPointerException e)
-		 {
-			e.printStackTrace(); 
-		 }
+		}
 		 
 		frame.getContentPane().add(header, BorderLayout.NORTH);
 		
