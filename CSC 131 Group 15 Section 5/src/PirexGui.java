@@ -9,6 +9,7 @@ import javax.swing.JTabbedPane;
 import javax.swing.JPanel;
 import javax.swing.JLabel;
 import javax.swing.JTextField;
+import javax.imageio.ImageIO;
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JTextArea;
@@ -17,8 +18,10 @@ import javax.swing.JSeparator;
 import java.awt.BorderLayout;
 import javax.swing.SpringLayout;
 import java.awt.GridBagLayout;
+import java.awt.Image;
 import java.awt.GridBagConstraints;
 import java.awt.Point;
+import java.io.IOException;
 import java.awt.Insets;
 import java.awt.FlowLayout;
 import javax.swing.SwingConstants;
@@ -66,11 +69,15 @@ public class PirexGui {
 		PirexMenuBar menuBar = new PirexMenuBar();
 		header.add(menuBar, BorderLayout.NORTH);
 		
-		JLabel logo = new JLabel();   
-		ImageIcon iconLogo = new ImageIcon("Images/PirexLogo.png");
-		logo.setIcon(iconLogo);
-		header.add(logo, BorderLayout.WEST);
+		try { 
+			 Image image = ImageIO.read(PirexGui.class.getResourceAsStream("/res/PirexLogo.png")); 
+			 //image = image.getScaledInstance(200, 200, java.awt.Image.SCALE_DEFAULT);
+			 frame.setIconImage(new ImageIcon(image).getImage()); 
+		 } catch (IOException e) {
+			 e.printStackTrace(); 
+		}
 		
+		 
 		frame.getContentPane().add(header, BorderLayout.NORTH);
 		
 		JPanel left = new JPanel();
