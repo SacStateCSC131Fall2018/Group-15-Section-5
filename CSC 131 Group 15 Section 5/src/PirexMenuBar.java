@@ -75,7 +75,7 @@ public class PirexMenuBar extends JMenuBar {
 		menu.add(item);
 	    item.addActionListener(new ActionListener() {
 	        public void actionPerformed(ActionEvent ev) {
-	        	JOptionPane.showInputDialog(null, 
+	        	JOptionPane.showInternalMessageDialog(null, 
 	        			"Pirex (personal information retrieval experimental system)\n"
 	        			+ "is an information retrieval system that individuals\n "
 	        			+ "can use to investigate their own texts.",
