@@ -71,7 +71,7 @@ public class PirexGui {
 		header.add(menuBar, BorderLayout.NORTH);
 		
 		try { 
-			 Image image = ImageIO.read(PirexGui.class.getResourceAsStream("/res/PX.png")); 
+			 Image image = ImageIO.read(new File("res/PX2.png")); 
 			 //image = image.getScaledInstance(200, 200, java.awt.Image.SCALE_DEFAULT);
 			 frame.setIconImage(new ImageIcon(image).getImage()); 
 		 } catch (IOException e) {
