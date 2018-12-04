@@ -72,7 +72,6 @@ public class PirexGui {
 		
 		try { 
 			 Image image = ImageIO.read(new File("res/PX2.png")); 
-			 //image = image.getScaledInstance(200, 200, java.awt.Image.SCALE_DEFAULT);
 			 frame.setIconImage(new ImageIcon(image).getImage()); 
 		 } catch (IOException e) {
 			 e.printStackTrace(); 
