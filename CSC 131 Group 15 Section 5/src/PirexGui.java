@@ -21,6 +21,7 @@ import java.awt.GridBagLayout;
 import java.awt.Image;
 import java.awt.GridBagConstraints;
 import java.awt.Point;
+import java.io.File;
 import java.io.IOException;
 import java.awt.Insets;
 import java.awt.FlowLayout;
@@ -70,9 +71,10 @@ public class PirexGui {
 		header.add(menuBar, BorderLayout.NORTH);
 		
 		try { 
-			 Image image = ImageIO.read(PirexGui.class.getResourceAsStream("PX.png")); 
-			 image = image.getScaledInstance(200, 200, java.awt.Image.SCALE_DEFAULT);
-			 frame.setIconImage(new ImageIcon(image).getImage()); 
+			//Image pxIcon = ImageIO.read(getClass().getResourceAsStream("res/PX.png"));
+			 Image pxIcon = ImageIO.read(getClass().getResource("/res/PX.png")); 
+			 //image = image.getScaledInstance(200, 200, java.awt.Image.SCALE_DEFAULT);
+			 frame.setIconImage(pxIcon); 
 		 } catch (IOException e) {
 			 e.printStackTrace(); 
 		 }
