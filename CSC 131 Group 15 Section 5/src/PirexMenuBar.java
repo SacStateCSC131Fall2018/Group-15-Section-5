@@ -2,6 +2,8 @@ import java.awt.event.KeyEvent;
 import javax.swing.JMenu;
 import javax.swing.JMenuBar;
 import javax.swing.JMenuItem;
+import javax.swing.JOptionPane;
+
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 
@@ -55,7 +57,7 @@ public class PirexMenuBar extends JMenuBar {
 		//Documents item - in Options
 		item = new JMenuItem("Documents");
 		item.setMnemonic(KeyEvent.VK_D);
-		menu.add(item);
+		menu.add(item);	
 		
 		//Sources item - in Options
 		item = new JMenuItem("Sources");
@@ -71,6 +73,16 @@ public class PirexMenuBar extends JMenuBar {
 		item = new JMenuItem("About");
 		item.setMnemonic(KeyEvent.VK_A);
 		menu.add(item);
+	    item.addActionListener(new ActionListener() {
+	        public void actionPerformed(ActionEvent ev) {
+	        	JOptionPane.showInternalMessageDialog(null, 
+	        			"Pirex (personal information retrieval experimental system)\n"
+	        			+ "is an information retrieval system that individuals\n "
+	        			+ "can use to investigate their own texts.",
+	    				"About Us", JOptionPane.INFORMATION_MESSAGE); 
+	        }
+	    });
+		
 		
 		//Index item - in Help
 		item = new JMenuItem("Index");
@@ -78,5 +90,4 @@ public class PirexMenuBar extends JMenuBar {
 		menu.add(item);
 		this.add(menu);
 	}
-	
 }
