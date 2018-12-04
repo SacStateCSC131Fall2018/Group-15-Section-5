@@ -65,14 +65,11 @@ public class PirexGui {
 		
 		PirexMenuBar menuBar = new PirexMenuBar();
 		header.add(menuBar, BorderLayout.NORTH);
-		//frame.getContentPane().add(menuBar, BorderLayout.NORTH);
 		
 		JLabel logo = new JLabel();   
 		ImageIcon iconLogo = new ImageIcon("Images/PirexLogo.png");
 		logo.setIcon(iconLogo);
 		header.add(logo, BorderLayout.WEST);
-		//logo.setBounds(0, 20, 967, 50);
-		//frame.getContentPane().add(logo, BorderLayout.CENTER);
 		
 		frame.getContentPane().add(header, BorderLayout.NORTH);
 		
