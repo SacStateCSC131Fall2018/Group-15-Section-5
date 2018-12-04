@@ -110,7 +110,8 @@ public class PirexGui {
 		JTabbedPane tabbedPane = new JTabbedPane(JTabbedPane.TOP);
 		layeredPane.add(tabbedPane, BorderLayout.CENTER);
 		
-		JPanel panel = new JPanel();
+		//Old code for Document Search Tab
+		/*JPanel panel = new JPanel();
 		tabbedPane.addTab("Search for Document", null, panel, null);
 		GridBagLayout gbl_panel = new GridBagLayout();
 		gbl_panel.columnWidths = new int[] {40, 50, 30, 30, 30, 30, 30, 30};
@@ -176,7 +177,10 @@ public class PirexGui {
 		gbc_scrollBar.fill = GridBagConstraints.VERTICAL;
 		gbc_scrollBar.gridx = 6;
 		gbc_scrollBar.gridy = 5;
-		panel.add(scrollBar, gbc_scrollBar);
+		panel.add(scrollBar, gbc_scrollBar);*/
+		
+		JPanel panel= new PirexSearchDocTab();
+		tabbedPane.add(panel);
 		
 		JPanel panel_1 = new PirexLoadDocTab();
 		tabbedPane.add(panel_1);		
