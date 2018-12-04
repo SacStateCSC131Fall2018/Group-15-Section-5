@@ -110,6 +110,7 @@ public class PirexGui {
 		JTabbedPane tabbedPane = new JTabbedPane(JTabbedPane.TOP);
 		layeredPane.add(tabbedPane, BorderLayout.CENTER);
 		
+		//Old code for Document Search Tab
 		/*JPanel panel = new JPanel();
 		tabbedPane.addTab("Search for Document", null, panel, null);
 		GridBagLayout gbl_panel = new GridBagLayout();
