@@ -83,7 +83,6 @@ public class PirexMenuBar extends JMenuBar {
 	        }
 	    });
 		
-		
 		//Index item - in Help
 		item = new JMenuItem("Index");
 		item.setMnemonic(KeyEvent.VK_I);
