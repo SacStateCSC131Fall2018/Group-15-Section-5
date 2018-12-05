@@ -11,7 +11,6 @@ import java.io.File;
 import java.io.IOException;
 
 public class PirexGui {
-//Shane Harris Test
 	private JFrame frame;
 
 	/**
