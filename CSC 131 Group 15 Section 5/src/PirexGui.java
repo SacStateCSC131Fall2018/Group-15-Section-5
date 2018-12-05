@@ -1,37 +1,18 @@
 import java.awt.EventQueue;
-
 import javax.swing.JFrame;
 import javax.swing.JLayeredPane;
-import javax.swing.JMenuBar;
-import javax.swing.JMenu;
-import javax.swing.JMenuItem;
 import javax.swing.JTabbedPane;
 import javax.swing.JPanel;
-import javax.swing.JLabel;
-import javax.swing.JTextField;
 import javax.imageio.ImageIO;
 import javax.swing.ImageIcon;
-import javax.swing.JButton;
-import javax.swing.JTextArea;
-import javax.swing.JScrollBar;
-import javax.swing.JScrollPane;
-import javax.swing.JSeparator;
 import java.awt.BorderLayout;
-import javax.swing.SpringLayout;
-import java.awt.GridBagLayout;
 import java.awt.Image;
-import java.awt.GridBagConstraints;
-import java.awt.Point;
 import java.io.File;
 import java.io.IOException;
-import java.awt.Insets;
-import java.awt.FlowLayout;
-import javax.swing.SwingConstants;
 
 public class PirexGui {
 //Shane Harris Test
 	private JFrame frame;
-	private JTextField textField;
 
 	/**
 	 * Launch the application.
