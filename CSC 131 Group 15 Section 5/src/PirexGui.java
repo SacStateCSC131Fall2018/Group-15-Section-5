@@ -1,37 +1,17 @@
 import java.awt.EventQueue;
-
 import javax.swing.JFrame;
 import javax.swing.JLayeredPane;
-import javax.swing.JMenuBar;
-import javax.swing.JMenu;
-import javax.swing.JMenuItem;
 import javax.swing.JTabbedPane;
 import javax.swing.JPanel;
-import javax.swing.JLabel;
-import javax.swing.JTextField;
 import javax.imageio.ImageIO;
 import javax.swing.ImageIcon;
-import javax.swing.JButton;
-import javax.swing.JTextArea;
-import javax.swing.JScrollBar;
-import javax.swing.JScrollPane;
-import javax.swing.JSeparator;
 import java.awt.BorderLayout;
-import javax.swing.SpringLayout;
-import java.awt.GridBagLayout;
 import java.awt.Image;
-import java.awt.GridBagConstraints;
-import java.awt.Point;
 import java.io.File;
 import java.io.IOException;
-import java.awt.Insets;
-import java.awt.FlowLayout;
-import javax.swing.SwingConstants;
 
 public class PirexGui {
-//Backup Master
 	private JFrame frame;
-	private JTextField textField;
 
 	/**
 	 * Launch the application.
@@ -102,22 +82,8 @@ public class PirexGui {
 		JPanel panel_1 = new PirexLoadDocTab();
 		tabbedPane.add(panel_1);		
 		
-		JPanel panel_2 = new JPanel();
+		JPanel panel_2 = new PirexSummarizeDocTab();
 		tabbedPane.addTab("Summarize Documents", null, panel_2, null);
-		panel_2.setLayout(new BorderLayout(0, 0));
-		
-		JTextArea textArea_3 = new JTextArea();
-		JScrollPane scroll = new JScrollPane(textArea_3,JScrollPane.VERTICAL_SCROLLBAR_ALWAYS,JScrollPane.HORIZONTAL_SCROLLBAR_NEVER);
-		panel_2.add(scroll, BorderLayout.CENTER);	
-		
-		
-		JPanel panel_3 = new JPanel();
-		panel_2.add(panel_3, BorderLayout.NORTH);
-		
-		JPanel panel_4 = new JPanel();
-		panel_2.add(panel_4, BorderLayout.WEST);
-		
-		JPanel panel_5 = new JPanel();
-		panel_2.add(panel_5, BorderLayout.SOUTH);
+
 	}
 }
