@@ -102,27 +102,8 @@ public class PirexGui {
 		JPanel panel_1 = new PirexLoadDocTab();
 		tabbedPane.add(panel_1);		
 		
-		//JPanel panel_2 = new JPanel();
-		//tabbedPane.addTab("Summarize Documents", null, panel_2, null);
-		//panel_2.setLayout(new BorderLayout(0, 0));
-		
 		JPanel panel_2 = new PirexSummarizeDocTab();
 		tabbedPane.addTab("Summarize Documents", null, panel_2, null);
 
-		/*panel_2.setLayout(new BorderLayout(0, 0));
-		
-		JTextArea textArea_3 = new JTextArea();
-		JScrollPane scroll = new JScrollPane(textArea_3,JScrollPane.VERTICAL_SCROLLBAR_ALWAYS,JScrollPane.HORIZONTAL_SCROLLBAR_NEVER);
-		panel_2.add(scroll, BorderLayout.CENTER);	
-		
-		
-		JPanel panel_3 = new JPanel();
-		panel_2.add(panel_3, BorderLayout.NORTH);
-		
-		JPanel panel_4 = new JPanel();
-		panel_2.add(panel_4, BorderLayout.WEST);
-		
-		JPanel panel_5 = new JPanel();
-		panel_2.add(panel_5, BorderLayout.SOUTH);*/
 	}
 }
