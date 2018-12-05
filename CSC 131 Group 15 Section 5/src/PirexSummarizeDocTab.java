@@ -1,27 +1,13 @@
-
-import java.awt.GridBagConstraints;
-import java.awt.GridBagLayout;
-import java.awt.Insets;
-
-import javax.swing.JButton;
-import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JScrollBar;
-import javax.swing.JSeparator;
 import javax.swing.JTextArea;
-import javax.swing.JTextField;
-import javax.swing.border.LineBorder;
-
 import java.awt.BorderLayout;
-import java.awt.Color;
 
 public class PirexSummarizeDocTab extends JPanel{
 	
 	private String name = "Summarize Documents";
 	
 	public PirexSummarizeDocTab() {
-		//JPanel panel_2 = new JPanel();
-		//tabbedPane.addTab("Summarize Documents", null, this, null);
 		this.setLayout(new BorderLayout(0, 0));		
 	
 		JTextArea textArea_3 = new JTextArea();

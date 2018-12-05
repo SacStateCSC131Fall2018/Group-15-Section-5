@@ -2,26 +2,19 @@ import java.awt.GridBagConstraints;
 import java.awt.GridBagLayout;
 import java.awt.Insets;
 import java.awt.Point;
-
 import javax.swing.JButton;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
-import javax.swing.JScrollBar;
 import javax.swing.JScrollPane;
-import javax.swing.JTabbedPane;
 import javax.swing.JTextArea;
 import javax.swing.JTextField;
-//Kevin
 public class PirexSearchDocTab extends JPanel {
 	
 
 	private static final long serialVersionUID = 1L;
 	private JTextField textField;
-	//private JTabbedPane tabbedPane; //hmmmmmm
 	private String name = "Search For Document";
 	public PirexSearchDocTab() {
-		//JPanel panel = new JPanel();
-		//tabbedPane.addTab("Search for Document", null, panel, null);
 		GridBagLayout gbl_panel = new GridBagLayout();
 		gbl_panel.columnWidths = new int[] {40, 50, 30, 30, 30, 30, 30, 30};
 		gbl_panel.rowHeights = new int[] {30, 34, 30, 170, 30, 170, 0};
