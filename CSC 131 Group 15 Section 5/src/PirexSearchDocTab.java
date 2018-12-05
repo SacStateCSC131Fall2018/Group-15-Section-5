@@ -7,6 +7,7 @@ import javax.swing.JButton;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JScrollBar;
+import javax.swing.JScrollPane;
 import javax.swing.JTabbedPane;
 import javax.swing.JTextArea;
 import javax.swing.JTextField;
@@ -59,6 +60,7 @@ public class PirexSearchDocTab extends JPanel {
 		
 		JTextArea textArea = new JTextArea();
 		textArea.setEditable(false);
+		JScrollPane scroll1 = new JScrollPane(textArea,JScrollPane.VERTICAL_SCROLLBAR_ALWAYS,JScrollPane.HORIZONTAL_SCROLLBAR_NEVER);
 		GridBagConstraints gbc_textArea = new GridBagConstraints();
 		gbc_textArea.weightx = 50.0;
 		gbc_textArea.fill = GridBagConstraints.BOTH;
@@ -66,9 +68,10 @@ public class PirexSearchDocTab extends JPanel {
 		gbc_textArea.gridwidth = 6;
 		gbc_textArea.gridx = 1;
 		gbc_textArea.gridy = 3;
-		this.add(textArea, gbc_textArea);
+		this.add(scroll1, gbc_textArea);
 		
 		JTextArea textArea_1 = new JTextArea();
+		JScrollPane scroll2 = new JScrollPane(textArea_1,JScrollPane.VERTICAL_SCROLLBAR_ALWAYS,JScrollPane.HORIZONTAL_SCROLLBAR_NEVER);
 		GridBagConstraints gbc_textArea_1 = new GridBagConstraints();
 		gbc_textArea_1.weightx = 50.0;
 		gbc_textArea_1.insets = new Insets(0, 0, 0, 5);
@@ -76,16 +79,8 @@ public class PirexSearchDocTab extends JPanel {
 		gbc_textArea_1.gridwidth = 5;
 		gbc_textArea_1.gridx = 1;
 		gbc_textArea_1.gridy = 5;
-		this.add(textArea_1, gbc_textArea_1);
+		this.add(scroll2, gbc_textArea_1);
 		
-		JScrollBar scrollBar = new JScrollBar();
-		GridBagConstraints gbc_scrollBar = new GridBagConstraints();
-		gbc_scrollBar.insets = new Insets(0, 0, 0, 5);
-		gbc_scrollBar.anchor = GridBagConstraints.WEST;
-		gbc_scrollBar.fill = GridBagConstraints.VERTICAL;
-		gbc_scrollBar.gridx = 6;
-		gbc_scrollBar.gridy = 5;
-		this.add(scrollBar, gbc_scrollBar);
 	}
 	public String getName() {
 		return name;
