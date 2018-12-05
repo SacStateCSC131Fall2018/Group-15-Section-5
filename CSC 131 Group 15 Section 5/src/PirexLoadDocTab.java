@@ -5,6 +5,7 @@ import java.awt.Insets;
 import javax.swing.JButton;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
+import javax.swing.JScrollPane;
 import javax.swing.JSeparator;
 import javax.swing.JTextArea;
 import javax.swing.JTextField;
@@ -136,6 +137,7 @@ public class PirexLoadDocTab extends JPanel{
 		this.add(btnProcess, gbc_btnProcess);
 		
 		JTextArea textArea_2 = new JTextArea();
+		JScrollPane scroll = new JScrollPane(textArea_2, JScrollPane.VERTICAL_SCROLLBAR_ALWAYS,JScrollPane.HORIZONTAL_SCROLLBAR_NEVER);
 		textArea_2.setBorder(new LineBorder(new Color(0, 0, 0)));
 		GridBagConstraints gbc_textArea_2 = new GridBagConstraints();
 		gbc_textArea_2.weightx = 50.0;
@@ -145,7 +147,7 @@ public class PirexLoadDocTab extends JPanel{
 		gbc_textArea_2.gridwidth = 7;
 		gbc_textArea_2.gridx = 1;
 		gbc_textArea_2.gridy = 9;
-		this.add(textArea_2, gbc_textArea_2);
+		this.add(scroll, gbc_textArea_2);
 	}
 	
 	

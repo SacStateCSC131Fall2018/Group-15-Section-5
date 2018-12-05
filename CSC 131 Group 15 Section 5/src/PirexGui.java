@@ -14,6 +14,7 @@ import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JTextArea;
 import javax.swing.JScrollBar;
+import javax.swing.JScrollPane;
 import javax.swing.JSeparator;
 import java.awt.BorderLayout;
 import javax.swing.SpringLayout;
@@ -106,10 +107,9 @@ public class PirexGui {
 		panel_2.setLayout(new BorderLayout(0, 0));
 		
 		JTextArea textArea_3 = new JTextArea();
-		panel_2.add(textArea_3, BorderLayout.CENTER);
+		JScrollPane scroll = new JScrollPane(textArea_3,JScrollPane.VERTICAL_SCROLLBAR_ALWAYS,JScrollPane.HORIZONTAL_SCROLLBAR_NEVER);
+		panel_2.add(scroll, BorderLayout.CENTER);	
 		
-		JScrollBar scrollBar_1 = new JScrollBar();
-		panel_2.add(scrollBar_1, BorderLayout.EAST);
 		
 		JPanel panel_3 = new JPanel();
 		panel_2.add(panel_3, BorderLayout.NORTH);
